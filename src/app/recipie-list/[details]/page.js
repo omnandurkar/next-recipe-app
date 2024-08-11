@@ -5,7 +5,7 @@ const fetchRecipeDetails = async (currentRecipeId) => {
 
     try {
 
-        const response = await fetch(`process.env.NEXT_PUBLIC_API_URL/${currentRecipeId}`);
+        const response = await fetch(`https://dummyjson.com/recipes/${currentRecipeId}`);
         const data = await response.json();
 
         // return data?.recipes;

@@ -5,7 +5,7 @@ import React from 'react'
 const fetchListOfRecipies = async () => {
 
     try {
-        const response = await fetch(process.env.NEXT_PUBLIC_API_URL);
+        const response = await fetch(`https://dummyjson.com/recipes`);
         const data = await response.json();
 
         // console.log(data?.recipes);
